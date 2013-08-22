@@ -1,0 +1,13 @@
+<html>
+<title>Test Site</title>
+<body>
+	<h1>Blog</h1>
+
+	<a href="/new">Add new Post</a>
+
+	<ul>
+	{% for p in post %}
+		<a href="/{{ p.id }}"><li> {{ p.text }} </li></a>
+	{% endfor %}
+	</ul>
+</body>
